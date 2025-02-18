@@ -10,26 +10,26 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "Classic Black Hoodie",
-    price: 59.99,
+    name: "Greedy Classic Tshirt",
+    price: 1999,
     image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     name: "Essential White Tee",
-    price: 24.99,
+    price: 1999,
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
     name: "Gray Melange Hoodie",
-    price: 64.99,
+    price: 1999,
     image: "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
     name: "Vintage Print Tee",
-    price: 29.99,
+    price: 1999,
     image: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
@@ -66,7 +66,7 @@ export function NewProducts() {
                 <p className="mt-2 text-sm text-gray-500 line-clamp-2">
                   Premium quality cotton blend hoodie perfect for any casual occasion.
                 </p>
-                <p className="mt-4 text-lg font-semibold text-gray-900">${product.price}</p>
+                <p className="mt-4 text-lg font-semibold text-gray-900">₹{product.price}</p>
                 <div className="mt-4 flex space-x-2">
                   <button
                     className="flex-1 bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-400"

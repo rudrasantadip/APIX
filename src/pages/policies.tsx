@@ -1,17 +1,88 @@
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 
 function TermsOfService() {
+  const terms = [
+    {
+      title: "General",
+      content:
+        "These Terms govern your use of ApixWear.in and any related services provided by us. We reserve the right to modify these Terms at any time without prior notice.",
+    },
+    {
+      title: "Eligibility",
+      content:
+        "You must be at least 18 years old or have parental/guardian consent to use this website. By using our website, you confirm that all information you provide is accurate and complete.",
+    },
+    {
+      title: "Product Information & Pricing",
+      content:
+        "We strive to ensure that product descriptions, images, and prices are accurate; however, errors may occur. Prices are subject to change without prior notice.",
+    },
+    {
+      title: "Orders & Payments",
+      content:
+        "By placing an order, you agree to provide accurate payment and shipping details. We reserve the right to cancel any order due to fraudulent activities, errors in pricing, or product unavailability.",
+    },
+    {
+      title: "Shipping & Delivery",
+      content:
+        "We aim to process and ship orders within the estimated timeframes mentioned on our website. Delivery times may vary based on location, courier services, and unforeseen delays.",
+    },
+    {
+      title: "Returns & Refunds",
+      content:
+        "Products may be eligible for return or exchange under specific conditions outlined in our Returns & Exchanges Policy. Refunds, if applicable, will be processed within a specified timeframe.",
+    },
+    {
+      title: "Intellectual Property",
+      content:
+        "All content on ApixWear.in, including logos, images, designs, and text, is our intellectual property. Unauthorized use, reproduction, or distribution of our content is prohibited.",
+    },
+    {
+      title: "User Conduct",
+      content:
+        "By using our website, you agree NOT to engage in any illegal or fraudulent activities, disrupt or harm the website's functionality, or use false information while placing orders.",
+    },
+    {
+      title: "Privacy Policy",
+      content:
+        "Your personal information is collected, stored, and used in accordance with our Privacy Policy. We take security measures to protect your data but cannot guarantee absolute security.",
+    },
+    {
+      title: "Limitation of Liability",
+      content:
+        "ApixWear.in is not liable for any indirect, incidental, or consequential damages arising from the use of our website or products. We do not guarantee uninterrupted access to our website.",
+    },
+    {
+      title: "Governing Law",
+      content:
+        "These Terms shall be governed by and interpreted in accordance with the laws of your jurisdiction.",
+    },
+    {
+      title: "Contact Us",
+      content:
+        "For any questions regarding these Terms, please contact us at support@apixwear.in.",
+    },
+  ];
+
   return (
-    <div className="prose max-w-none ">
-      <h2 className="text-[#EBEDEC]">Terms of Service</h2>
-      <p className="text-[#A4A7AD]">
-        Welcome to ModernThreads. By accessing our website and making purchases,
-        you agree to these terms and conditions.
+    <div className="prose max-w-none p-6 bg-gray-900 rounded-lg shadow-lg">
+      <h2 className="text-[#EBEDEC] font-bold text-2xl mb-4">Terms of Service</h2>
+      <p className="text-[#A4A7AD] mb-4">
+        Welcome to ApixWear. By accessing our website and making purchases, you
+        agree to these terms and conditions.
       </p>
-      {/* Add more terms content */}
+      <ul className="list-disc pl-5 space-y-4">
+        {terms.map((term, index) => (
+          <li key={index} className="text-[#A4A7AD]">
+            <p className="font-bold text-[#EBEDEC]">{term.title}</p>
+            <p className="text-[#A4A7AD]">{term.content}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
+
 
 function PrivacyPolicy() {
   return (

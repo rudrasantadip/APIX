@@ -2,6 +2,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, ContactShadows } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import ApixLogo from './apix-logo';
+import { Link } from 'react-router-dom';
 
 export default function Logo3D() {
   return (
@@ -72,7 +73,9 @@ export default function Logo3D() {
       {/* CTA Buttons */}
       <div className="mt-12 flex justify-center space-x-4">
         <button className="bg-[#EB3131] px-6 py-3 rounded-md hover:bg-[#AB2525] text-white">
+          <Link to="/products">
           Shop Now
+          </Link>
         </button>
       </div>
     </motion.div>

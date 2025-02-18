@@ -1,9 +1,6 @@
-import { BestSellers } from '../components/home/best-sellers';
-import { Carousel } from '../components/home/carousel';
-import { FeaturedProducts } from '../components/home/featured-products';
 import Logo3D from '../components/home/logo3d';
 import { NewProducts } from '../components/home/new-produts';
-import { TrendingNow } from '../components/home/trending-now';
+
 
 export function Home() {
 

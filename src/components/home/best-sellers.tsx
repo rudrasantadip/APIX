@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 interface Product {
   id: number;
   name: string;

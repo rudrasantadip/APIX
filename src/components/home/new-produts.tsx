@@ -28,9 +28,9 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: "Vintage Print Tee",
+    name: "Radio Active",
     price: 1999,
-    image: "https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "assets/products/radioactive/r5.jpg"
   }
 ];
 
@@ -66,7 +66,7 @@ export function NewProducts() {
                 <p className="mt-2 text-sm text-gray-500 line-clamp-2">
                   Premium quality cotton blend hoodie perfect for any casual occasion.
                 </p>
-                <p className="mt-4 text-lg font-semibold text-gray-900">₹{product.price}</p>
+                <p className="mt-4 text-lg font-semibold"><span className='line-through text-gray-500'> ₹{product.price}</span> <span className='ms-3 text-gray-900'>₹999</span></p>
                 <div className="mt-4 flex space-x-2">
                   <button
                     className="flex-1 bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-400"

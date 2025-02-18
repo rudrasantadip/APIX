@@ -4,11 +4,13 @@ import { useFrame } from '@react-three/fiber';
 import { Group, MeshStandardMaterial, Mesh } from 'three';
 
 
+
 function ApixLogo() {
   const meshRef = useRef<Group>(null);
 
   // Load your 3D logo model
-  const { scene } = useGLTF('src/components/Assets/apix_logo.glb'); // Replace with the path to your logo
+  // const { scene } = useGLTF('src/components/Assets/apix_logo.glb'); // Replace with the path to your logo
+  const { scene } = useGLTF('/assets/apix_logo.glb');
 
   useFrame(() => {
     if (meshRef.current) {

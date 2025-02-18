@@ -22,9 +22,9 @@ const products: Product[] = [
   },
   {
     id: 3,
-    name: "Lost In Translation",
+    name: "Memory Punishment",
     price: 1999,
-    image: "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "assets/products/memory_punishment/m2.jpg"
   },
   {
     id: 4,

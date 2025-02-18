@@ -10,8 +10,8 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">About APIX</h3>
             <p className="text-sm">Premium quality hoodies and t-shirts for the modern fashion enthusiast.</p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="hover:text-white"><Facebook className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-white"><Instagram className="h-5 w-5" /></a>
+              <a href="https://www.facebook.com/people/APIX/61568755974184/" className="hover:text-white"><Facebook className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/apixwear.in/" className="hover:text-white"><Instagram className="h-5 w-5" /></a>
               <a href="#" className="hover:text-white"><Twitter className="h-5 w-5" /></a>
             </div>
           </div>

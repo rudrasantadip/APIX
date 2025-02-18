@@ -23,7 +23,7 @@ export function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <img src="/src/components/Assets/apix font.jpg" alt="Company Logo" className="h-8 w-8 mr-2" />
+              <img src="/assets/apix font.jpg" alt="Company Logo" className="h-8 w-8 mr-2" />
               <h1 className="text-xl font-bold">APIX</h1>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

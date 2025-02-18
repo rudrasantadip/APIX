@@ -16,13 +16,13 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: "Essential White Tee",
+    name: "Lost In Translation",
     price: 1999,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "assets/products/lost_in_translation/l3.jpg"
   },
   {
     id: 3,
-    name: "Gray Melange Hoodie",
+    name: "Lost In Translation",
     price: 1999,
     image: "https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },

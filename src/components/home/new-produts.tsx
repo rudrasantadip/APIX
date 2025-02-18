@@ -12,7 +12,7 @@ const products: Product[] = [
     id: 1,
     name: "Greedy Classic Tshirt",
     price: 1999,
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "assets/products/greedy/g1.jpg"
   },
   {
     id: 2,

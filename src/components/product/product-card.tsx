@@ -52,7 +52,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Price and Buttons */}
         <div className="mt-4">
-          <p className="text-lg font-semibold text-gray-900">${product.price}</p>
+          <p className="text-lg font-semibold"><span className='text-gray-500 linade-through' >₹{product.mrp}</span> <span className='ms-3 text-gray-900'>₹{product.price}</span></p>
           <div className="mt-2 flex space-x-2">
             <Button
               variant="primary"

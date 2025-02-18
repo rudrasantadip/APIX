@@ -30,7 +30,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/faq" className="hover:text-white">FAQ</Link></li>
-              <li><Link to="/policies/shipping" className="hover:text-white">Shipping Info</Link></li>
+              <li><Link to="/policies/shipping" className="hover:text-white">Shipping Policy</Link></li>
               <li><Link to="/policies/returns" className="hover:text-white">Returns</Link></li>
               <li><Link to="/policies/size-guide" className="hover:text-white">Size Guide</Link></li>
             </ul>

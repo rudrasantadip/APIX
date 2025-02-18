@@ -173,18 +173,18 @@ export function Policies() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-[#121212] to-[#767676] via-[#121212] bg-[linear-gradient(to_bottom,_#121212_0%,_#767676,_2%)]">
+    <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-[#121212] to-[#767676] via-[#121212] bg-[linear-gradient(to_bottom,_#121212_0%,_#767676,_2%)]">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="md:col-span-1">
           <nav className="space-y-1">
             {policies.map((policy) => (
-              <Link
+              <Link 
                 key={policy.name}
                 to={policy.path}
                 className={`block px-3 py-2 rounded-md text-sm font-medium ${
                   location.pathname === policy.path
-                    ? "bg-gray-900 text-white"
-                    : "text-[#EBEDEC] hover:bg-gray-600 text-gray-600"
+                    ? "bg-gray-600 text-white"
+                    : "text-[#EBEDEC] hover:bg-gray-600 text-white-900"
                 }`}
               >
                 {policy.name}

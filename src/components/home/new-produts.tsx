@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 interface Product {
   id: number;
   name: string;
-  price: number;
+  mrp: number;
+  price:number;
   image: string;
 }
 
@@ -11,25 +12,29 @@ const products: Product[] = [
   {
     id: 1,
     name: "Greedy Classic Tshirt",
-    price: 1999,
+    mrp: 1999,
+    price:999,
     image: "assets/products/greedy/g1.jpg"
   },
   {
     id: 2,
     name: "Lost In Translation",
-    price: 1999,
+    mrp: 1999,
+    price:999,
     image: "assets/products/lost_in_translation/l3.jpg"
   },
   {
     id: 3,
     name: "Memory Punishment",
-    price: 1999,
+    mrp: 1999,
+    price:999,
     image: "assets/products/memory_punishment/m2.jpg"
   },
   {
     id: 4,
     name: "Radio Active",
-    price: 1999,
+    mrp: 1999,
+    price:999,
     image: "assets/products/radioactive/r5.jpg"
   }
 ];
@@ -66,7 +71,7 @@ export function NewProducts() {
                 <p className="mt-2 text-sm text-gray-500 line-clamp-2">
                   Premium quality cotton blend hoodie perfect for any casual occasion.
                 </p>
-                <p className="mt-4 text-lg font-semibold"><span className='line-through text-gray-500'> ₹{product.price}</span> <span className='ms-3 text-gray-900'>₹999</span></p>
+                <p className="mt-4 text-lg font-semibold"><span className='line-through text-gray-500'> ₹{product.mrp}</span> <span className='ms-3 text-gray-900'>₹{product.price}</span></p>
                 <div className="mt-4 flex space-x-2">
                   <button
                     className="flex-1 bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-400"

@@ -10,6 +10,10 @@ export function Home() {
       <div className="absolute animate-float bg-gray-500 opacity-30 w-8 h-8 top-32 right-10"></div>
       <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 right-1/3"></div>
       <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 left-1/4"></div>
+      <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 left-1/4"></div>
+      <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 left-1/4"></div>
+      <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 left-1/4"></div>
+      <div className="absolute animate-float bg-gray-500 opacity-30 w-6 h-6 top-1/3 left-1/4"></div>
       
       {/* Hero Section */}
       <div className="relative z-10 flex flex-col items-center justify-center mt-10">

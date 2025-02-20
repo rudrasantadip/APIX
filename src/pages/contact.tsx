@@ -17,7 +17,7 @@ export function Contact() {
               <Mail className="h-6 w-6 text-gray-400 mr-4" />
               <div>
                 <h3 className="text-lg text-[#EDEBEC] font-medium">Email</h3>
-                <p className="text-[#A4A7AD]">apixwear.official@com</p>
+                <p className="text-[#A4A7AD]">apixwear.official@gmail.com</p>
               </div>
             </div>
             

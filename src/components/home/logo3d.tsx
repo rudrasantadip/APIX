@@ -9,21 +9,21 @@ export default function Logo3D() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative flex flex-col justify-between items-center h-screen w-full"
+      className="relative flex flex-col justify-between items-center w-full p-4 md:p-8"
     >
       <div className="w-full">
         {/* Headline and Subheading */}
         <div className="text-center px-4 mb-12">
-          <h1 className="text-white text-5xl md:text-6xl font-bold">
+          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
             Discover the Next Wave of Style & Creativity
           </h1>
-          <p className="text-gray-300 text-lg md:text-xl mt-4">
+          <p className="text-gray-300 text-base sm:text-lg md:text-xl mt-4">
             Explore cutting-edge designs made for dreamers and trendsetters.
           </p>
         </div>
 
         {/* 3D Logo */}
-        <div className="relative w-full h-[50vh] flex justify-center items-center">
+        <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] flex justify-center items-center">
           <Canvas
             shadows
             camera={{ position: [0, 0, 5], fov: 50 }}
@@ -73,13 +73,13 @@ export default function Logo3D() {
 
         {/* CTA Button */}
         <div className="mt-12 flex justify-center">
-          <button className="bg-[#EB3131] px-6 py-3 rounded-md hover:bg-[#AB2525] text-white">
+          <button className="bg-[#EB3131] px-6 py-3 rounded-md hover:bg-[#AB2525] text-white text-sm sm:text-base md:text-lg">
             <Link to="/products">Shop Now</Link>
           </button>
         </div>
 
         {/* Marquee Element */}
-        <div className="w-full py-9">
+        <div className="w-full py-9 mt-12 flex flex-row justify-center items-center">
           <div className="marquee-container w-full overflow-hidden text-white">
             <div className="marquee-text whitespace-nowrap">
               <span className="mx-4">

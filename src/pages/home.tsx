@@ -14,11 +14,12 @@ export function Home() {
       {/* Hero Section */}
       <div className="relative z-10 flex flex-col items-center justify-center mt-10">
         <div className="relative inline-block">
-          {/* Hero content can be added here */}
+          {/* Hero content can go here */}
         </div>
       </div>
       
       <Logo3D />
+      
       <div>
         <NewProducts />
       </div>
@@ -31,6 +32,29 @@ export function Home() {
         }
         .animate-float {
           animation: float 3s ease-in-out infinite;
+        }
+
+        /* Marquee styles */
+        .marquee-container {
+          position: absolute; /* or "fixed" if you want it pinned to the viewport */
+          bottom: 0;
+          width: 100%;
+          overflow: hidden;
+          background-color: #000; /* Adjust as needed */
+          color: #fff; /* Adjust as needed */
+          padding: 0.5rem 0;
+          white-space: nowrap;
+          z-index: 50; /* Ensure it's on top */
+        }
+
+        .marquee-text {
+          display: inline-block;
+          animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+          0%   { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
         }
       `}</style>
     </div>

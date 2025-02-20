@@ -71,11 +71,15 @@ export function NewProducts() {
   return (
     <div className="pt-10">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        {/* White heading */}
+        <h1 className="text-center text-white text-4xl font-bold mb-8">
+          STEAL TEES
+        </h1>
+        
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-4">
           {products.map((product) => {
             const isWishlisted = wishlist.includes(product.id);
             return (
-
               <div
                 key={product.id}
                 className="group relative overflow-hidden hover:shadow-lg bg-white"
@@ -137,7 +141,7 @@ export function NewProducts() {
                     /* Filled Heart (Wishlisted) */
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-pink-500"
+                      className="h-6 w-6 text-gray-100"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >

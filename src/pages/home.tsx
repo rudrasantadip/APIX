@@ -1,3 +1,4 @@
+import ClickableCarousel from '../components/home/clickableCarousel';
 import Logo3D from '../components/home/logo3d';
 import { NewProducts } from '../components/home/new-produts';
 
@@ -23,7 +24,9 @@ export function Home() {
       </div>
       
       <Logo3D />
-      
+      <div>
+        <ClickableCarousel />
+      </div>
       <div>
         <NewProducts />
       </div>

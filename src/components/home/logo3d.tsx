@@ -79,27 +79,35 @@ export default function Logo3D() {
         </div>
 
         {/* Marquee Element */}
-        <div className="w-full py-9 mt-12 flex flex-row justify-center items-center">
+        <div className="w-full py-9 mt-12 flex justify-center items-center">
           <div className="marquee-container w-full overflow-hidden text-white">
-            <div className="marquee-text whitespace-nowrap">
-              <span className="mx-4">
-                SHIPPING POLICY: Fast shipping, premium product quality, and exceptional service.
-              </span>
-              <span className="mx-4">
-                SHIPPING POLICY: Fast shipping, premium product quality, and exceptional service.
-              </span>
+            <div className="marquee-text flex">
+              {/* Duplicate the content for a seamless loop */}
+              <div className="marquee-content whitespace-nowrap">
+                <span>
+                  SHIPPING POLICY: Fast shipping, premium product quality, and exceptional service.
+                </span>
+                <span>
+                  SHIPPING POLICY: Fast shipping, premium product quality, and exceptional service.
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(100%); }
-          100% { transform: translateX(-100%); }
-        }
         .marquee-text {
-          display: inline-block;
+          display: flex;
+          width: 200%;
           animation: marquee 15s linear infinite;
+        }
+        .marquee-content {
+          display: flex;
+          gap: 0;
+        }
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
         }
       `}</style>
     </motion.div>

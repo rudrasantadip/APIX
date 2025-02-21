@@ -11,9 +11,9 @@ export function Cart() {
       product: {
         id: 1,
         name: "Classic Black Hoodie",
-        price: 59.99,
+        price: 999,
         description: "",
-        images: ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"],
+        images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHpbuolP_ZESfCnM3Go-X5mWS4TdsFZHJ_ww&s"],
         sizes: ['S', 'M', 'L', 'XL'],
         colors: ['Black', 'Gray', 'Navy'],
         category: "Hoodies",
@@ -37,7 +37,7 @@ export function Cart() {
   };
 
   const subtotal = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-  const shipping = 5.99;
+  const shipping = 199;
   const total = subtotal + shipping;
 
   return (
@@ -98,7 +98,7 @@ export function Cart() {
                 </div>
                 <div className="ml-6 text-[#A4A7AD]" >
                   <p className="text-lg font-medium text-gray-900">
-                    ${(item.product.price * item.quantity).toFixed(2)}
+                    ₹{(item.product.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
               </div>
@@ -111,16 +111,16 @@ export function Cart() {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <p>Subtotal</p>
-                  <p>${subtotal.toFixed(2)}</p>
+                  <p>₹{subtotal.toFixed(2)}</p>
                 </div>
                 <div className="flex justify-between ">
                   <p>Shipping</p>
-                  <p>${shipping.toFixed(2)}</p>
+                  <p>₹{shipping.toFixed(2)}</p>
                 </div>
                 <div className="border-t pt-4">
                   <div className="flex justify-between font-medium">
                     <p>Total</p>
-                    <p>${total.toFixed(2)}</p>
+                    <p>₹{total.toFixed(2)}</p>
                   </div>
                 </div>
               </div>

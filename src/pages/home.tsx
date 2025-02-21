@@ -1,6 +1,7 @@
 import ClickableCarousel from '../components/home/clickableCarousel';
 import Logo3D from '../components/home/logo3d';
 import { NewProducts } from '../components/home/new-produts';
+import ShopByMoodCarousel from '../components/home/ShopByMoodCarousel';
 
 export function Home() {
   return (
@@ -29,6 +30,9 @@ export function Home() {
       </div>
       <div>
         <NewProducts />
+      </div>
+      <div>
+        <ShopByMoodCarousel/>
       </div>
       
       <style>{`

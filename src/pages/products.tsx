@@ -42,7 +42,7 @@ export function Products() {
     return (
       <Link
         to={`/product/${product.id}`}
-        className="relative bg-[#2b2b2b] p-4 text-white"
+        className="relative bg-[#2b2b2b] p-3 text-white"
       >
         {/* Wishlist Heart (top-right) */}
         <button
